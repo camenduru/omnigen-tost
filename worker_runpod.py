@@ -28,35 +28,35 @@ def download_file(url, save_dir, file_name):
 def generate(input):
     values = input["input"]
 
-    image_1=values['image_1']
+    image_1 = values.get('image_1')
     if image_1:
-        image_1=download_file(url=image_1, save_dir='/content/ComfyUI/input', file_name='image_1')
+        image_1 = download_file(url=image_1, save_dir='/content/ComfyUI/input', file_name='image_1')
         image_1, _ = LoadImage.load_image(image_1)
     else:
         image_1 = None
-    image_2=values['image_2']
+    image_2 = values.get('image_2')
     if image_2:
-        image_2=download_file(url=image_2, save_dir='/content/ComfyUI/input', file_name='image_2')
+        image_2 = download_file(url=image_2, save_dir='/content/ComfyUI/input', file_name='image_2')
         image_2, _ = LoadImage.load_image(image_2)
     else:
         image_2 = None
-    image_3=values['image_3']
+    image_3 = values.get('image_3')
     if image_3:
-        image_3=download_file(url=image_3, save_dir='/content/ComfyUI/input', file_name='image_3')
+        image_3 = download_file(url=image_3, save_dir='/content/ComfyUI/input', file_name='image_3')
         image_3, _ = LoadImage.load_image(image_3)
     else:
         image_3 = None
-    prompt = values['prompt']
-    num_inference_steps = values['num_inference_steps']
-    guidance_scale = values['guidance_scale']
-    img_guidance_scale = values['img_guidance_scale']
-    max_input_image_size = values['max_input_image_size']
-    separate_cfg_infer = values['separate_cfg_infer']
-    offload_model = values['offload_model']
-    use_input_image_size_as_output = values['use_input_image_size_as_output']
-    width = values['width']
-    height = values['height']
-    seed = values['seed']
+    prompt = values.get('prompt')
+    num_inference_steps = values.get('num_inference_steps')
+    guidance_scale = values.get('guidance_scale')
+    img_guidance_scale = values.get('img_guidance_scale')
+    max_input_image_size = values.get('max_input_image_size')
+    separate_cfg_infer = values.get('separate_cfg_infer')
+    offload_model = values.get('offload_model')
+    use_input_image_size_as_output = values.get('use_input_image_size_as_output')
+    width = values.get('width')
+    height = values.get('height')
+    seed = values.get('seed')
 
     if seed == 0:
         random.seed(int(time.time()))
