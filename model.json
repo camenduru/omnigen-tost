@@ -9,7 +9,7 @@
     "separate_cfg_infer": true,
     "offload_model": false,
     "use_input_image_size_as_output": false,
-    "width": 1024,
+    "width": 768,
     "height": 1024,
     "seed": 0,
     "max_input_image_size": 1024
