@@ -6,7 +6,8 @@
 https://tost.ai
 
 ### 🧬 Code
-https://github.com/VectorSpaceLab/OmniGen
+https://github.com/VectorSpaceLab/OmniGen <br />
+https://github.com/1038lab/ComfyUI-OmniGen <br />
 
 ### 📄 Paper
 https://arxiv.org/abs/2409.11340
