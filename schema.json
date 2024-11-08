@@ -88,10 +88,6 @@
       ],
       "default": 50
     },
-    "guidance": {
-      "type": "number",
-      "description": "Guidance"
-    },
     "separate_cfg_infer": {
       "type": "boolean",
       "description": "Separate CFG Infer",
