@@ -1,0 +1,16 @@
+{
+    "image_1": "https://litter.catbox.moe/j0onz6.jpg",
+    "image_2": "https://litter.catbox.moe/t2xbql.webp",
+    "image_3": "",
+    "prompt": "A blond woman in wearing a long pink dress standing in a park. A woman is image_1 The pink dress is image_2.",
+    "guidance_scale": 3.5,
+    "img_guidance_scale": 1.8,
+    "num_inference_steps": 50,
+    "separate_cfg_infer": true,
+    "offload_model": false,
+    "use_input_image_size_as_output": false,
+    "width": 1024,
+    "height": 1024,
+    "seed": 0,
+    "max_input_image_size": 1024
+}

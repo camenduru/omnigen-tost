@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+  "type": "object",
+  "properties": {
+    "readme": {
+      "type": "string",
+      "title": "OmniGen: Unified Image Generation",
+      "author": "Shitao Xiao, Yueze Wang, Junjie Zhou, Huaying Yuan, Xingrun Xing, Ruiran Yan, Shuting Wang, Tiejun Huang, Zheng Liu",
+      "code": "https://github.com/VectorSpaceLab/OmniGen",
+      "paper": "https://arxiv.org/abs/2409.11340",
+      "page": "https://vectorspacelab.github.io/OmniGen/",
+      "jupyter": "https://github.com/camenduru/omnigen-tost",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/omnigen.ipynb",
+      "tags": [
+        "Image to Image"
+      ],
+      "widget": "readme"
+    },
+    "upload_1": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "image_1"
+    },
+    "image_1": {
+      "type": "string",
+      "description": "image_1",
+      "widget": "textarea"
+    },
+    "upload_2": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "image_2"
+    },
+    "image_2": {
+      "type": "string",
+      "description": "image_2",
+      "widget": "textarea"
+    },
+    "upload_3": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "image_3"
+    },
+    "image_3": {
+      "type": "string",
+      "description": "image_3",
+      "widget": "textarea"
+    },
+    "prompt": {
+      "type": "string",
+      "description": "Prompt",
+      "widget": "textarea"
+    },
+    "guidance_scale": {
+      "type": "number",
+      "description": "Guidance Scale"
+    },
+    "img_guidance_scale": {
+      "type": "number",
+      "description": "Img Guidance Scale"
+    },
+    "num_inference_steps": {
+      "type": "integer",
+      "widget": "select",
+      "description": "Num Inference steps",
+      "oneOf": [
+        {
+          "description": "30",
+          "enum": [
+            30
+          ]
+        },
+        {
+          "description": "40",
+          "enum": [
+            40
+          ]
+        },
+        {
+          "description": "50",
+          "enum": [
+            50
+          ]
+        }
+      ],
+      "default": 50
+    },
+    "guidance": {
+      "type": "number",
+      "description": "Guidance"
+    },
+    "separate_cfg_infer": {
+      "type": "boolean",
+      "description": "Separate CFG Infer",
+      "widget": "hidden"
+    },
+    "offload_model": {
+      "type": "boolean",
+      "description": "Offload Model",
+      "widget": "hidden"
+    },
+    "use_input_image_size_as_output": {
+      "type": "boolean",
+      "description": "Use Input Image Size as Output",
+      "widget": "hidden"
+    },
+    "width": {
+      "type": "integer",
+      "description": "Width"
+    },
+    "height": {
+      "type": "integer",
+      "description": "Height"
+    },
+    "seed": {
+      "type": "integer",
+      "description": "Seed (if 0 random)"
+    },
+    "max_input_image_size": {
+      "type": "integer",
+      "description": "Max Input Image Size",
+      "widget": "hidden"
+    },
+    "example": {
+      "type": "string",
+      "image1": "https://files.catbox.moe/zuus35.jpg",
+      "image2": "https://files.catbox.moe/rh3k3y.webp",
+      "image3": "https://fakeimg.pl/1024x1024/282828/eae0d0/?text=<in%20out>#.png",
+      "image4": "https://files.catbox.moe/3iwi9a.png",
+      "widget": "example"
+    }
+  },
+  "buttons": [
+    {
+      "id": "enter",
+      "label": "🥪 Enter"
+    }
+  ]
+}
